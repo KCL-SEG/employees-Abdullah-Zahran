@@ -39,6 +39,8 @@ class Employee:
         elif self.commissionType == 2:
             self.pay += self.commission * self.contracts
 
+        return self.pay
+
     def __str__(self):
         if self.salary:
             if self.commissionType == 1:
