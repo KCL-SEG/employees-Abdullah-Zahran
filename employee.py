@@ -44,18 +44,18 @@ class Employee:
     def __str__(self):
         if self.salary:
             if self.commissionType == 1:
-                return self.name + " works on a monthly salary of "+str(self.rate)+" and receives a bonus commission of"+str(self.bonus)+". Their total pay is "+str(self.pay)+"."
+                return self.name + " works on a monthly salary of "+str(self.rate)+" and receives a bonus commission of"+str(self.bonus)+".  Their total pay is "+str(self.pay)+"."
             elif self.commissionType == 2:
-                return self.name + " works on a monthly salary of "+str(self.rate)+" and receives a commission for "+str(self.contracts)+" contract(s) at "+str(self.commission)+"/contract. Their total pay is "+str(self.pay)+"."
+                return self.name + " works on a monthly salary of "+str(self.rate)+" and receives a commission for "+str(self.contracts)+" contract(s) at "+str(self.commission)+"/contract.  Their total pay is "+str(self.pay)+"."
             else:
-                return self.name + " works on a monthly salary of "+str(self.rate)+". Their total pay is "+str(self.pay)+"."
+                return self.name + " works on a monthly salary of "+str(self.rate)+".  Their total pay is "+str(self.pay)+"."
         else:
             if self.commissionType == 1:
-                return self.name + " works on a contract salary of "+str(self.hours)+" hours at "+str(self.rate)+"/hour and receives a bonus commission of"+str(self.bonus)+". Their total pay is "+str(self.pay)+"."
+                return self.name + " works on a contract salary of "+str(self.hours)+" hours at "+str(self.rate)+"/hour and receives a bonus commission of"+str(self.bonus)+".  Their total pay is "+str(self.pay)+"."
             elif self.commissionType == 2:
-                return self.name + " works on a contract salary of "+str(self.hours)+" hours at "+str(self.rate)+"/hour and receives a commission for "+str(self.contracts)+" contract(s) at "+str(self.commission)+"/contract. Their total pay is "+str(self.pay)+"."
+                return self.name + " works on a contract salary of "+str(self.hours)+" hours at "+str(self.rate)+"/hour and receives a commission for "+str(self.contracts)+" contract(s) at "+str(self.commission)+"/contract.  Their total pay is "+str(self.pay)+"."
             else:
-                return self.name + " works on a contract salary of "+str(self.hours)+" hours at "+str(self.rate)+"/hour. Their total pay is "+str(self.pay)+"."
+                return self.name + " works on a contract salary of "+str(self.hours)+" hours at "+str(self.rate)+"/hour.  Their total pay is "+str(self.pay)+"."
 
 
 
@@ -64,16 +64,16 @@ class Employee:
 billie = Employee('Billie', True, 4000, None, None, None, None)
 
 # Charlie works on a contract of 100 hours at 25/hour.  Their total pay is 2500.
-charlie = Employee('Charlie', False, 25, 100, None, None, None)
+charlie X = Employee('Charlie', False, 25, 100, None, None, None)
 
 # Renee works on a monthly salary of 3000 and receives a commission for 4 contract(s) at 200/contract.  Their total pay is 3800.
 renee = Employee('Renee', True, 3000, None, 2, 200, 4)
 
 # Jan works on a contract of 150 hours at 25/hour and receives a commission for 3 contract(s) at 220/contract.  Their total pay is 4410.
-jan = Employee('Jan', False, 25, 150, 2, 220, 3)
+jan X = Employee('Jan', False, 25, 150, 2, 220, 3)
 
 # Robbie works on a monthly salary of 2000 and receives a bonus commission of 1500.  Their total pay is 3500.
-robbie = Employee('Robbie', True, 2000, None, 1, 1500, None)
+robbie X = Employee('Robbie', True, 2000, None, 1, 1500, None)
 
 # Ariel works on a contract of 120 hours at 30/hour and receives a bonus commission of 600.  Their total pay is 4200.
-ariel = Employee('Ariel', False, 30, 120, 1, 600, None)
+ariel X = Employee('Ariel', False, 30, 120, 1, 600, None)
