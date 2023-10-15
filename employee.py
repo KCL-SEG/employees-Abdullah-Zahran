@@ -44,18 +44,18 @@ class Employee:
     def __str__(self):
         if self.salary:
             if self.commissionType == 1:
-                return self.name + "works on a monthly salary of ",self.rate," and receives a bonus commission of",self.bonus,". Their total pay is ",self.pay,"."
+                return self.name + "works on a monthly salary of "+self.rate+" and receives a bonus commission of"+self.bonus+". Their total pay is "+self.pay+"."
             elif self.commissionType == 2:
-                return self.name + "works on a monthly salary of ",self.rate," and receives a commission for ",self.contracts," contract(s) at ",self.commission,"/contract. Their total pay is ",self.pay,"."
+                return self.name + "works on a monthly salary of "+self.rate+" and receives a commission for "+self.contracts+" contract(s) at "+self.commission+"/contract. Their total pay is "+self.pay+"."
             else:
-                return self.name + "works on a monthly salary of ",self.rate,". Their total pay is ",self.pay,"."
+                return self.name + "works on a monthly salary of "+self.rate+". Their total pay is "+self.pay+"."
         else:
             if self.commissionType == 1:
-                return self.name + "works on a contract salary of ",self.hours," hours at ",self.rate,"/hour and receives a bonus commission of",self.bonus,". Their total pay is ",self.pay,"."
+                return self.name + "works on a contract salary of "+self.hours+" hours at "+self.rate+"/hour and receives a bonus commission of"+self.bonus+". Their total pay is "+self.pay+"."
             elif self.commissionType == 2:
-                return self.name + "works on a contract salary of ",self.hours," hours at ",self.rate,"/hour and receives a commission for ",self.contracts," contract(s) at ",self.commission,"/contract. Their total pay is ",self.pay,"."
+                return self.name + "works on a contract salary of "+self.hours+" hours at "+self.rate+"/hour and receives a commission for "+self.contracts+" contract(s) at "+self.commission+"/contract. Their total pay is "+self.pay+"."
             else:
-                return self.name + "works on a contract salary of ",self.hours," hours at ",self.rate,"/hour. Their total pay is ",self.pay,"."
+                return self.name + "works on a contract salary of "+self.hours+" hours at "+self.rate+"/hour. Their total pay is "+self.pay+"."
 
 
 
